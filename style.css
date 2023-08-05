@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+}
+
+a.lightbox-link {
+  text-decoration: none;
+  color: #000;
+}
+
+#photostream {
+    display: flex;
+    flex-direction: column;
+}
+
+div.photo {
+    margin: 1em auto;
+}
+
+div.photo img {
+    width: 100%;
+}
+
+@media (pointer:coarse) {
+    /* custom css for "touch targets" */
+    div.photo {
+        width: 90%;
+    }
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    overflow-y: scroll;
+}
+
+img#lightbox-image {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
