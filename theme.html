@@ -4,6 +4,8 @@
     <title>{Title}</title>
     <!-- Add any meta tags or CSS links here -->
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
     <style>
         body {
           margin: 0;
@@ -54,7 +56,7 @@
     {block:Posts}
         {block:Photo}
             <div class="photo">
-                <a class="lightbox-link" href="{PhotoURL-HighRes}" data-image-url="{PhotoURL-HighRes}">
+                <a class="lightbox-link" href="#" data-image-url="{PhotoURL-HighRes}">
                     <img src="{PhotoUrl-500}" />
                 </a>
             </div>
@@ -86,7 +88,6 @@
             lightboxLinks.forEach(link => {
               link.addEventListener('click', e => {
                 e.preventDefault();
-                // e.stopPropagation();
                 const imageUrl = link.dataset.imageUrl;
                 lightboxImage.setAttribute('src', imageUrl);
                 lightbox.style.display = 'block';
@@ -100,6 +101,10 @@
             
             console.log("hey!");
         });
+    </script>
+    
+    <!-- Infinite scroll -->
+    <script src="https://oli-g-sk.github.io/tumblrtheme23/infinite-scroll.js">
     </script>
 
 </body>
