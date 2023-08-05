@@ -44,6 +44,7 @@ function loadMorePosts() {
 function appendPosts(posts) {
   var postContainer = $(htmlPostContainer);
   $.each(posts, function(index, post) {
-    var template = getPostTemplate(post["photo-url-500"], post["photo-url-highres"]);
+    var template = getPostTemplate(post["photo-url-500"], post["photo-url-1280"]);
+    postContainer.append(template);
   });
 }
