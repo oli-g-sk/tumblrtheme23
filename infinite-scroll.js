@@ -5,12 +5,15 @@ var isLoading = false;
 var currentPage = 1;
 
 function getPostTemplate(photoUrl500, photoUrlFull) {
-  return
-  "<div class=\"photo\">"
-    + "<a class=\"lightbox-link\" href=\"#\" data-image-url=\"" + photoUrlFull + "\">"
-      + "<img src=\"" + photoUrl500 + "\" />"
-    + "</a>"
-  + "</div>"
+  var result = "<div class=\"photo\">";
+  result += "<a class=\"lightbox-link\" href=\"#\" data-image-url=\"";
+  result += photoUrlFull;
+  result += "\">";
+  result += "<img src=\"";
+  result += photoUrl500;
+  result += "\"/>";
+  result += "</a></div>";
+  return result;
 }
 
 $(window).on("scroll", function() {
