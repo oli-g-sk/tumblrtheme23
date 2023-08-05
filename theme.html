@@ -27,6 +27,17 @@
             margin: 1em auto;
         }
         
+        div.photo img {
+            width: 100%;
+        }
+        
+        @media (pointer:coarse) {
+            /* custom css for "touch targets" */
+            div.photo {
+                width: 90%;
+            }
+        }
+        
         #lightbox {
             display: none;
             position: fixed;
@@ -37,8 +48,6 @@
             background: rgba(0, 0, 0, 0.7);
             z-index: 999;
             overflow-y: scroll;
-            
-            max-height: 125%;
         }
         
         img#lightbox-image {
