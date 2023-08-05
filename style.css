@@ -44,14 +44,8 @@ div.photo img {
 img#lightbox-image {
     margin: 0 auto;
     display: block;
+    position: relative;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-
-    /* sizing */
     max-width: 90%;
     max-height: 90%;
-
-    /* vert center */
-    position: relative;
-    top:50%;
-    transform: translateY(-50%);
 }
