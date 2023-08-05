@@ -4,8 +4,6 @@ const htmlPostContainer = "#photostream"
 var isLoading = false;
 var currentPage = 1;
 
-var postTemplate = 
-
 function getPostTemplate(photoUrl500, photoUrlFull) {
   return
   "<div class=\"photo\">"
