@@ -15,7 +15,7 @@
           color: #000;
         }
         
-        .overlay {
+        #lightbox {
           display: none;
           position: fixed;
           top: 0;
@@ -65,7 +65,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Get the elements
-            const overlay = document.querySelector('.overlay');
+            const lightbox = document.querySelector('#lightbox');
             const lightboxImage = document.querySelector('.lightbox-image');
             const lightboxLinks = document.querySelectorAll('.lightbox-link');
             
@@ -81,8 +81,8 @@
             });
             
             // Close the lightbox when clicking on the overlay
-            overlay.addEventListener('click', () => {
-              overlay.style.display = 'none';
+            lightbox.addEventListener('click', () => {
+              lightbox.style.display = 'none';
             });
             
             console.log("hey!");
